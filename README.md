@@ -1,5 +1,5 @@
-# Squid Game (Glass Tiles)
-
+# Squid Game (Glass Bridge)
+![](glass_bridge_game.jpg)
 ## Introduction
 
 So in Squid game, there is this one game where there is a bridge made out of 18 pairs of glass tiles, and for each pair of glass tiles that are side by side, one of them can hold the weight of 2 persons and the other one will just break when someone step on it.
