@@ -29,7 +29,7 @@ Assumptions:
 
 
 ## Math behind it
-
+<img src="https://render.githubusercontent.com/render/math?math=P(p_i,x)=\sum_{j=0}^{x-1}(\frac{1}{2})^{x-j}*P(p_i-1,j)">
 $$P(p_i,x)=\sum_{j=0}^{x-1}(\frac{1}{2})^{x-j}*P(p_i-1,j)$$
 Where:
 
