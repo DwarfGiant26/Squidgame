@@ -30,7 +30,7 @@ Assumptions:
 
 ## Math behind it
 <img src="https://render.githubusercontent.com/render/math?math=P(p_i,x)=\sum_{j=0}^{x-1}(\frac{1}{2})^{x-j}*P(p_i-1,j)">
-$$P(p_i,x)=\sum_{j=0}^{x-1}(\frac{1}{2})^{x-j}*P(p_i-1,j)$$
+
 Where:
 
     $P(p_i,x)$ = Probability of player number i to end in step number x(step number 1 start in the first pairs of glass tiles)
@@ -47,11 +47,11 @@ Except some edge cases:
 
 If x is the last step, then because the last step is not to a glass, player i will take 1 less guess. if player i-1 reach last step, player i can also reach the same step since there is no further step. For this case the formula changes into
 
-$$P(p_i,x)=\sum_{j=0}^{x}(\frac{1}{2})^{max((x-j-1),0)}*P(p_i-1,j)$$
+<img src="https://render.githubusercontent.com/render/math?math=P(p_i,x)=\sum_{j=0}^{x}(\frac{1}{2})^{max((x-j-1),0)}*P(p_i-1,j)">
 
 So the final formula can be written as:
 
-$$P(p_i,x)=\sum_{j=0}^{x-1+isLastStep}(\frac{1}{2})^{max((x-j-isLastStep),0)}*P(p_i-1,j)$$
+<img src="https://render.githubusercontent.com/render/math?math=P(p_i,x)=\sum_{j=0}^{x-1+isLastStep}(\frac{1}{2})^{max((x-j-isLastStep),0)}*P(p_i-1,j)">
 
 Note:
 max((x-j-is_last_step),0) because if j == x and x is the last step then x-j-is_last_step = -1, and a player can not make -1 number of guess.
