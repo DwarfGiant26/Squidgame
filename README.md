@@ -51,7 +51,7 @@ If x is the last step, then because the last step is not to a glass, player i wi
 
 So the final formula can be written as:
 
-<img src="https://render.githubusercontent.com/render/math?math=P(p_i,x)=\sum_{j=0}^{x-1+isLastStep}(\frac{1}{2})^{max((x-j-isLastStep),0)}*P(p_i-1,j)">
+<img src="https://render.githubusercontent.com/render/math?math=P(p_i,x)=\sum_{j=0}^{x-1 + isLastStep}(\frac{1}{2})^{max((x-j-isLastStep),0)}*P(p_i-1,j)">
 
 Note:
 max((x-j-is_last_step),0) because if j == x and x is the last step then x-j-is_last_step = -1, and a player can not make -1 number of guess.
